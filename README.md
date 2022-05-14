@@ -1,4 +1,4 @@
-**[antfu.me](https://antfu.me)**
+**[merlinalex.top](https://merlinalex.top)**
 
 my personal website powered by [Vite](https://vitejs.dev/)
 
