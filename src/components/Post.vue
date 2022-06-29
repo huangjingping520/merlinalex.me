@@ -38,7 +38,8 @@ onMounted(() => {
       && !event.altKey
     ) {
       const url = new URL(link.href)
-      if (url.origin !== window.location.origin) return
+      if (url.origin !== window.location.origin)
+        return
 
       event.preventDefault()
       const { pathname, hash } = url
@@ -76,10 +77,8 @@ onMounted(() => {
     <slot />
   </article>
   <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8">
-    <router-link
-      :to="route.path.split('/').slice(0, -1).join('/') || '/'"
-      class="font-mono no-underline opacity-50 hover:opacity-75"
-    >
+    <router-link :to="route.path.split('/').slice(0, -1).join('/') || '/'"
+      class="font-mono no-underline opacity-50 hover:opacity-75">
       cd ..
     </router-link>
   </div>

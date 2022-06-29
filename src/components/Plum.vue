@@ -1,9 +1,3 @@
-<template>
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none" style="z-index: -1">
-    <canvas ref="el" width="400" height="400" />
-  </div>
-</template>
-
 <script setup='props' lang='ts'>
 import type { Fn } from '@vueuse/core'
 
@@ -17,7 +11,7 @@ const el = ref<HTMLCanvasElement | null>(null)
 const { random } = Math
 const size = reactive(useWindowSize())
 
-const start = ref<Fn>(() => {})
+const start = ref<Fn>(() => { })
 const init = ref(4)
 const len = ref(6)
 const stopped = ref(false)
@@ -46,7 +40,7 @@ function polar2cart(x = 0, y = 0, r = 0, theta = 0) {
   return [x + dx, y + dy]
 }
 
-onMounted(async() => {
+onMounted(async () => {
   const canvas = el.value!
   const { ctx } = initCanvas(canvas, size.width, size.height)
   const { width, height } = canvas
@@ -123,3 +117,9 @@ onMounted(async() => {
   start.value()
 })
 </script>
+
+<template>
+  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none" style="z-index: -1">
+    <canvas ref="el" width="400" height="400" />
+  </div>
+</template>

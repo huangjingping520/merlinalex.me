@@ -8,15 +8,8 @@ defineProps<{ projects: Record<string, any[]> }>()
       {{ key }}
     </h4>
     <div class="project-grid py-2 -mx-3 gap-2">
-      <a
-        v-for="item, idx in projects[key]"
-        :key="idx"
-        class="item relative flex items-center"
-        :href="item.link"
-        target="_blank"
-        :class="!item.link ? 'opacity-0 pointer-events-none h-0 -mt-8 -mb-4' : ''"
-        :title="item.name"
-      >
+      <a v-for="item, idx in projects[key]" :key="idx" class="item relative flex items-center" :href="item.link"
+        target="_blank" :class="!item.link ? 'opacity-0 pointer-events-none h-0 -mt-8 -mb-4' : ''" :title="item.name">
         <div v-if="item.icon" class="pt-2 pr-5">
           <Slidev v-if="item.icon === 'slidev'" class="text-4xl opacity-50" />
           <VueUse v-else-if="item.icon === 'vueuse'" class="text-4xl opacity-50" />
@@ -36,12 +29,7 @@ defineProps<{ projects: Record<string, any[]> }>()
   <div class="markdown pb5">
     <p op75>
       <em>
-        Thanks for getting intersted in my works! If like them or find them useful, consider
-        &nbsp;<a
-          href="https://github.com/sponsors/antfu"
-          target="_blank"
-          rel="nofollow noopener noreferrer"
-        >sponsoring me</a>&nbsp;to support me keeping them sustainable. Cheers! :)
+        Thanks for getting intersted in my works! Cheers! :)
       </em>
     </p>
   </div>

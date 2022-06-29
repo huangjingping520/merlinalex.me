@@ -18,7 +18,7 @@ const route = useRoute()
       <router-link to="/posts" class="!border-none !font-400" :class="route.path === '/posts' ? '' : inactiveStyle">
         Blog
       </router-link>
-      <router-link to="/talks" class="!border-none !font-400" :class="route.path === '/talks' ? '' : inactiveStyle">
+      <!-- <router-link to="/talks" class="!border-none !font-400" :class="route.path === '/talks' ? '' : inactiveStyle">
         Talks
       </router-link>
       <router-link to="/podcasts" class="!border-none !font-400" :class="route.path === '/podcasts' ? '' : inactiveStyle">
@@ -26,7 +26,7 @@ const route = useRoute()
       </router-link>
       <router-link to="/streams" class="!border-none !font-400" :class="route.path === '/streams' ? '' : inactiveStyle">
         Streams
-      </router-link>
+      </router-link> -->
     </div>
   </div>
 </template>
