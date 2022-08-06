@@ -30,7 +30,15 @@ pnpm add -D eslint @antfu/eslint-config
       "warn",
       "as-needed"
     ],
-    "no-console": "off"
+    "no-console": "off",
+    "vue/max-attributes-per-line": ["error", {
+    "singleline": {
+      "max": 3
+    },
+    "multiline": {
+      "max": 3
+    }
+  }]
   }
 }
 ```
