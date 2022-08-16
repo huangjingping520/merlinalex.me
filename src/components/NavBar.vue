@@ -43,7 +43,7 @@ import { isDark } from '~/logics'
           <div i-ri-sticky-note-line />
         </router-link>
         <a href="https://docs.merlinalex.top" target="_blank" title="Docs" class="lt-md:hidden">
-          <div i-material-symbols:docs />
+          <div i-gg-file-document />
         </a>
         <!-- <router-link to="/sponsors-list" title="Sponsors">
           <div i-ri-heart-line />
