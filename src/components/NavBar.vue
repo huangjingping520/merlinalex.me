@@ -42,14 +42,17 @@ import { isDark } from '~/logics'
         <router-link to="/notes" title="Notes">
           <div i-ri-sticky-note-line />
         </router-link>
+        <a href="https://docs.merlinalex.top" target="_blank" title="Docs" class="lt-md:hidden">
+          <div i-material-symbols:docs />
+        </a>
         <!-- <router-link to="/sponsors-list" title="Sponsors">
           <div i-ri-heart-line />
         </router-link> -->
-        <a href="https://twitter.com/Jingping_Huang" target="_blank" title="Twitter" class="lt-md:hidden">
-          <feather-twitter />
-        </a>
         <a href="https://github.com/huangjingping520" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-uil-github-alt />
+        </a>
+        <a href="https://twitter.com/Jingping_Huang" target="_blank" title="Twitter" class="lt-md:hidden">
+          <feather-twitter />
         </a>
         <!-- <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
           <div i-la-rss-square style="font-size:1.25rem; margin: 0 -0.125rem;" />
